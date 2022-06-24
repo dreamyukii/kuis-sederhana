@@ -14,7 +14,7 @@ int main(){
 
     switch (menu) {
         case 1:
-            tampilkanNyawa();
+            masukGame();
             break;
         case 2:
             break;
