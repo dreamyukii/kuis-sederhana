@@ -1,5 +1,5 @@
-using namespace std;
 #define nyawa 5
+
 //struct untuk kesempatan
 struct Nyawa{
     int atas;
@@ -29,51 +29,12 @@ void hapusNyawa(){
 //menampilkan kesempatan pemain
 void tampilkanNyawa(){
     kesempatanAwal();
-    std::cout<<Kesempatan.atas<<endl;
+    std::cout<<Kesempatan.atas<<std::endl;
 }
+
 //menampilkan sisa kesempatan pemain
 void tampilkanKesempatan(){
-    std::cout << Kesempatan.atas<<endl;
+    std::cout << Kesempatan.atas<<std::endl;
 }
 
 
-void opsiDebug(){
-    int masukan;
-    string keluar;
-    bool apakahKeluar = false;
-
-    do {
-        system("clear");
-        cout<<"------DEBUG-------\n";
-        cout<<"1.Hapus Nyawa\n";
-        cout<<"2.Tampilkan Nyawa\n";
-        cout<<"3.Keluar\n";
-        cout<<"--------------------------\n";
-        cout<<"=";
-        cin>>masukan;
-
-        switch (masukan){
-            case 1:
-                hapusNyawa();
-                break;
-            case 2:
-                tampilkanNyawa();
-                break;
-            case 3:
-                goto keluar;
-            default:
-                cout<<"Menu tidak tersedia!";
-                break;
-        }
-
-        cout<<"Mau keluar? (y/n) = ";cin>>keluar;
-
-        apakahKeluar = keluar == "y";
-
-    }
-
-    while(!apakahKeluar);
-    keluar:
-    exit(0);
-
-}

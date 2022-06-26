@@ -3,4 +3,4 @@ project(finalproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(finalproject main.cpp)
+add_executable(finalproject main.cpp nyawa.hpp tentang.hpp escapeGame.hpp)
